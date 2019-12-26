@@ -20,8 +20,7 @@ public class CartServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         logger.info("New Request: " + req);
 
-        resp.addHeader("title", "Main");
-        resp.getWriter().println("<title>Каталог</title");
+        resp.getWriter().println("<title>Корзина</title");
         getServletContext().getRequestDispatcher("/header.html").include(req, resp);
         resp.getWriter().println("<h1 class=\"text-center\">There will be a Cart Page</h1>");
         getServletContext().getRequestDispatcher("/footer.html").include(req, resp);
