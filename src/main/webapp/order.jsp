@@ -5,7 +5,7 @@
 <%@include file="header.html"%>
     <body>
     <div class="container">
-        <h1>Главная страница сайта</h1>
+        <h1>Ваш продукт <c:out value="${product.name}"/> добавлен в корзину</h1>
         <%@include file="footer.html"%>
     </div>
     </body>

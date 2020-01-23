@@ -6,6 +6,22 @@
          version="4.0">
 
   <display-name>Archetype Created Web Application</display-name>
+
+  <context-param>
+    <param-name>jdbcConnectionString</param-name>
+    <param-value>jdbc:mysql://localhost:3306/javaee_test_db?createDatabaseIfNotExist=true&amp;allowPublicKeyRetrieval=true&amp;useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>dbUsername</param-name>
+    <param-value>server</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>dbPassword</param-name>
+    <param-value>123</param-value>
+  </context-param>
+
   <error-page>
     <error-code>404</error-code>
     <location>/error.html</location>
